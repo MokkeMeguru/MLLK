@@ -78,6 +78,3 @@
 ;;                                     :end_date (clj-time.core/date-time 2018 1 6)})
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
-(send-data! "8zvcussLPAzz7xbdisQb" {:name "NIKKEI/INDEX"
-                                    :start_date (clj-time.core/date-time 2017 12 1)
-                                    :end_date (clj-time.core/date-time 2018 1 6)})

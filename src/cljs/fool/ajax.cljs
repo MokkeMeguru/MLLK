@@ -1,5 +1,10 @@
 (ns fool.ajax
-  (:require [ajax.core :as ajax]))
+  (:require [ajax.core :as ajax]
+            [reagent.session :as session]))
+
+(defn user-action [request]
+  (session/put! :user-event true)
+  request)
 
 (defn local-uri? [{:keys [uri]}]
   (not (re-find #"^\w+?://" uri)))
@@ -13,8 +18,8 @@
 
 (defn load-interceptors! []
   (swap! ajax/default-interceptors
-         conj
-         (ajax/to-interceptor {:name "default headers"
-                               :request default-headers})))
-
-
+         into
+         [(ajax/to-interceptor {:name "default headers"
+                                :request default-headers})
+          (ajax/to-interceptor {:name "user action"
+                                :request user-action})]))

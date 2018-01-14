@@ -6,8 +6,26 @@
             [goog.history.EventType :as HistoryEventType]
             [markdown.core :refer [md->html]]
             [fool.ajax :refer [load-interceptors!]]
-            [ajax.core :refer [GET POST]])
+            [ajax.core :refer [GET POST]]
+            [fool.components.common :as c]
+            [fool.components.registration :as reg]
+            [fool.components.login :as l]
+            [fool.components.user-menu :as user-menu])
   (:import goog.History))
+
+;; user-menu ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+(defn user-menu []
+  (if-let [id (session/get :identity)]
+    [:ul.nav.navbar-nav.pull-xs-right
+     [:li.nav-item [user-menu/user-form-button id]]
+     [:li.nav-item
+      [:a.dropdown-item.btn
+       {:on-click #(session/remove! :identity)}
+       "sign out"]]]
+    [:ul.nav.navbar-nav.pull-xs-right
+     [:li.nav-item [l/login-button]]
+     [:li.nav-item [reg/registration-button]]]))
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
 (defn nav-link [uri title page]
   [:li.nav-item
@@ -15,17 +33,20 @@
    [:a.nav-link {:href uri} title]])
 
 (defn navbar []
-  [:nav.navbar.navbar-dark.bg-primary.navbar-expand-md
-   {:role "navigation"}
-   [:button.navbar-toggler.hidden-sm-up
-    {:type "button"
-     :data-toggle "collapse"
-     :data-target "#collapsing-navbar"} "☰"]
-   [:a.navbar-brand {:href "#/"} "fool"]
-   [:div#collapsing-navbar.collapse.navbar-collapse
-    [:ul.nav.navbar-nav.mr-auto
-     [nav-link "#/" "Home" :home]
-     [nav-link "#/about" "About" :about]]]])
+  (let [collapsed? (r/atom true)]
+    (fn []
+      [:nav.navbar.navbar-dark.bg-success.navbar-expand-md
+       {:role "navigation"}
+       [:button.navbar-toggler.hidden-sm-up
+        {:type "button"
+         :data-toggle "collapse"
+         :data-target "#collapsing-navbar"} "☰"]
+       [:a.navbar-brand {:href "#/"} "fool"]
+       [:div#collapsing-navbar.collapse.navbar-collapse
+        [:ul.nav.navbar-nav.mr-auto
+         [nav-link "#/" "Home" :home]
+         [nav-link "#/about" "About" :about]]]
+       [user-menu]])))
 
 (defn about-page []
   [:div.container
@@ -37,15 +58,22 @@
   [:div.container
    (when-let [docs (session/get :docs)]
      [:div.row>div.col-sm-12
-      [:div {:dangerouslySetInnerHTML
-             {:__html (md->html docs)}}]])])
+      [:div
+       ;; {:dangerouslySetInnerHTML
+       ;;  {:__html (md->html docs)}}
+       ]])])
 
 (def pages
   {:home #'home-page
    :about #'about-page})
 
 (defn page []
-  [(pages (session/get :page))])
+  [:div
+   ;; modal test
+   ;; [reg/registration-form]
+   (when-let [session-modal (session/get :modal)]
+     [session-modal])
+   [(pages (session/get :page))]])
 
 ;; -------------------------
 ;; Routes
@@ -77,8 +105,10 @@
   (r/render [#'navbar] (.getElementById js/document "navbar"))
   (r/render [#'page] (.getElementById js/document "app")))
 
+;; add identity
 (defn init! []
   (load-interceptors!)
-  (fetch-docs!)
+  ;; (fetch-docs!)
   (hook-browser-navigation!)
+  (session/put! :identity js/identity)
   (mount-components))
