@@ -6,10 +6,20 @@
             [ring.util.anti-forgery :refer [anti-forgery-field]]
             [ring.middleware.anti-forgery :refer [*anti-forgery-token*]]))
 
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;; add identity
+;; ??? ;;;;;;;;;;;;;;;;;;;;;;;
+(declare ^:dynamic *identity*)
+;;(def *identity* nil)
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
 (declare ^:dynamic *app-context*)
 (parser/set-resource-path!  (clojure.java.io/resource "templates"))
 (parser/add-tag! :csrf-field (fn [_ _] (anti-forgery-field)))
 (filters/add-filter! :markdown (fn [content] [:safe (md-to-html-string content)]))
+
+;; (render "home.html")
+;; (parser/render "{{identity|json|safe}}" {:identity {:a 1}})
 
 (defn render
   "renders the HTML template located relative to resources/templates"

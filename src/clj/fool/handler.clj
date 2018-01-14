@@ -2,7 +2,7 @@
   (:require [compojure.core :refer [routes wrap-routes]]
             [fool.layout :refer [error-page]]
             [fool.routes.home :refer [home-routes]]
-            [fool.routes.services :refer [service-routes]]
+            [fool.routes.services :refer [service-routes restricted-service-routes]]
             [compojure.route :as route]
             [fool.env :refer [defaults]]
             [mount.core :as mount]
@@ -19,7 +19,8 @@
       (-> #'home-routes
           (wrap-routes middleware/wrap-csrf)
           (wrap-routes middleware/wrap-formats))
-          #'service-routes
+      #'service-routes
+      (wrap-routes #'restricted-service-routes middleware/wrap-auth)
       (route/not-found
         (:body
           (error-page {:status 404

@@ -3,7 +3,7 @@
             [cheshire.generate :as cheshire]
             [cognitect.transit :as transit]
             [clojure.tools.logging :as log]
-            [fool.layout :refer [*app-context* error-page]]
+            [fool.layout :refer [*app-context* error-page *identity*]]
             [ring.middleware.anti-forgery :refer [wrap-anti-forgery]]
             [ring.middleware.webjars :refer [wrap-webjars]]
             [muuntaja.core :as muuntaja]
@@ -97,6 +97,14 @@
   (restrict handler {:handler authenticated?
                      :on-error on-error}))
 
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;; WARNING ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+(defn wrap-identity [handler]
+  (fn [request]
+    (binding [*identity* (get-in request [:session :identity])]
+      (handler request))))
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
 (defn wrap-auth [handler]
   (let [backend (session-backend)]
     (-> handler
@@ -105,6 +113,7 @@
 
 (defn wrap-base [handler]
   (-> ((:middleware defaults) handler)
+      wrap-identity
       wrap-auth
       wrap-webjars
       wrap-flash
