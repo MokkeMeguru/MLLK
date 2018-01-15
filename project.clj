@@ -42,7 +42,11 @@
                  [bouncer "1.0.1"]
                  [clj-quandl-api "0.2.1"]
                  [clj-http "3.7.0"]
-                 [com.chartbeat.opentsdb "0.2.1"]]
+                 [com.chartbeat.opentsdb "0.2.1"]
+
+                 [cljs-react-material-ui "0.2.48"]
+                 [cljsjs/react "15.6.1-1"]
+                 [cljsjs/react-dom "15.6.1-1"]]
 
   :min-lein-version "2.0.0"
   

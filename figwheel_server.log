@@ -1,0 +1,642 @@
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 1.049 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/goog/deps.js
+notifying browser that file changed:  target/cljsbuild/public/js/out/cljs_deps.js
+notifying browser that file changed:  target/cljsbuild/public/js/out/fool/components/material_ui.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[31mFailed to compile "target/cljsbuild/public/js/app.js" in 0.83 seconds.[0m
+[36m----  Could not Analyze  src/cljs/fool/components/material_ui.cljs  ----[0m
+
+  [1mNo such namespace: cljsjs.material-ui, could not locate cljsjs/material_ui.cljs, cljsjs/material_ui.cljc, or JavaScript source providing "cljsjs.material-ui" [0m
+
+[36m----  Analysis Error : Please see src/cljs/fool/components/material_ui.cljs  ----[0m
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.874 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/fool/components/material_ui.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 6.828 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/goog/deps.js
+notifying browser that file changed:  target/cljsbuild/public/js/out/cljs_deps.js
+notifying browser that file changed:  target/cljsbuild/public/js/out/fool/components/material_ui.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[36m----  Compiler Warning on   src/cljs/fool/components/material_ui.cljs   line:11  column:15  ----[0m
+
+  [1mUse of undeclared Var cljs-react-material-ui.reagent/get-mui-theme[0m
+
+  [36m 7[0m  [36m   [reagent.core :as r])[0m
+  [36m 8[0m  [36m  )[0m
+  [36m 9[0m  [36m[0m
+  [36m10[0m  [36m(ui/mui-theme-provider[0m
+  [33m11[0m  [1m {:mui-theme (ui/get-mui-theme)}[0m
+  [0m  [0m  [33m              ^--- Use of undeclared Var cljs-react-material-ui.reagent/get-mui-theme[0m
+  [36m12[0m  [36m (ui/paper "Hello world"))[0m
+
+[36m----  Compiler Warning : Please see src/cljs/fool/components/material_ui.cljs  ----[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 1.08 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/fool/components/material_ui.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[36m----  Compiler Warning on   src/cljs/fool/components/material_ui.cljs   line:10  column:15  ----[0m
+
+  [1mUse of undeclared Var cljs-react-material-ui.reagent/get-mui-theme[0m
+
+  [36m 6[0m  [36m   [cljs-react-material-ui.icons :as ic][0m
+  [36m 7[0m  [36m   [reagent.core :as r]))[0m
+  [36m 8[0m  [36m[0m
+  [36m 9[0m  [36m(ui/mui-theme-provider[0m
+  [33m10[0m  [1m {:mui-theme (ui/get-mui-theme)}[0m
+  [0m  [0m  [33m              ^--- Use of undeclared Var cljs-react-material-ui.reagent/get-mui-theme[0m
+  [36m11[0m  [36m (ui/paper "Hello world"))[0m
+
+[36m----  Compiler Warning : Please see src/cljs/fool/components/material_ui.cljs  ----[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 1.036 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/fool/components/material_ui.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 1.002 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/fool/components/material_ui.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.939 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/fool/components/material_ui.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.884 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/fool/components/material_ui.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.901 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/fool/components/material_ui.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[31mFailed to compile "target/cljsbuild/public/js/app.js" in 0.65 seconds.[0m
+[36m----  Could not Analyze  src/cljs/fool/core.cljs  ----[0m
+
+  [1mNo such namespace: fool.components.material, could not locate fool/components/material.cljs, fool/components/material.cljc, or JavaScript source providing "fool.components.material" [0m
+
+[36m----  Analysis Error : Please see src/cljs/fool/core.cljs  ----[0m
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.927 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/cljs_deps.js
+notifying browser that file changed:  target/cljsbuild/public/js/out/fool/core.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.985 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/fool/core.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.913 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/fool/core.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.932 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/fool/core.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.614 seconds.[0m
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.658 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/cljs_deps.js
+notifying browser that file changed:  target/cljsbuild/public/js/out/fool/components/ml.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.793 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/fool/components/ml.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.686 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/fool/components/ml.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.658 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/fool/components/ml.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[36m----  Compiler Warning on   src/cljs/fool/components/ml.cljs   line:9  column:9  ----[0m
+
+  [1mWrong number of args (0) passed to reagent.core/as-element[0m
+
+  [36m 5[0m  [36m   [cljs-react-material-ui.reagent :as ui][0m
+  [36m 6[0m  [36m   [cljs-react-material-ui.icons :as ic][0m
+  [36m 7[0m  [36m   [reagent.core :as r :refer [atom]]))[0m
+  [36m 8[0m  [36m[0m
+  [33m 9[0m  [1m(def el (r/as-element))[0m
+  [0m  [0m  [33m        ^--- Wrong number of args (0) passed to reagent.core/as-element[0m
+  [36m10[0m  [36m[0m
+  [36m11[0m  [36m(defn ml-settings [][0m
+  [36m12[0m  [36m  (let [drawer1 (atom false)][0m
+  [36m13[0m  [36m    [ui/drawer[0m
+  [36m14[0m  [36m     {:docked false[0m
+
+[36m----  Compiler Warning : Please see src/cljs/fool/components/ml.cljs  ----[0m
+[36m----  Compiler Warning on   src/cljs/fool/components/ml.cljs   line:16  column:7  ----[0m
+
+  [1mUse of undeclared Var cljs-react-material-ui.reagent/List[0m
+
+  [36m12[0m  [36m(let [drawer1 (atom false)][0m
+  [36m13[0m  [36m  [ui/drawer[0m
+  [36m14[0m  [36m   {:docked false[0m
+  [36m15[0m  [36m    :open @drawer1}[0m
+  [33m16[0m  [1m   [ui/List[0m
+  [0m  [0m  [33m    ^--- Use of undeclared Var cljs-react-material-ui.reagent/List[0m
+  [36m17[0m  [36m    [ui/ListItem {:leftIcon (el)}]]]))[0m
+
+[36m----  Compiler Warning : Please see src/cljs/fool/components/ml.cljs  ----[0m
+[36m----  Compiler Warning on   src/cljs/fool/components/ml.cljs   line:17  column:8  ----[0m
+
+  [1mUse of undeclared Var cljs-react-material-ui.reagent/ListItem[0m
+
+  [36m13[0m  [36m[ui/drawer[0m
+  [36m14[0m  [36m {:docked false[0m
+  [36m15[0m  [36m  :open @drawer1}[0m
+  [36m16[0m  [36m [ui/List[0m
+  [33m17[0m  [1m  [ui/ListItem {:leftIcon (el)}]]]))[0m
+  [0m  [0m  [33m   ^--- Use of undeclared Var cljs-react-material-ui.reagent/ListItem[0m
+
+[36m----  Compiler Warning : Please see src/cljs/fool/components/ml.cljs  ----[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.843 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/fool/components/ml.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[36m----  Compiler Warning on   src/cljs/fool/components/ml.cljs   line:16  column:7  ----[0m
+
+  [1mUse of undeclared Var cljs-react-material-ui.reagent/List[0m
+
+  [36m12[0m  [36m(let [drawer1 (atom false)][0m
+  [36m13[0m  [36m  [ui/drawer[0m
+  [36m14[0m  [36m   {:docked false[0m
+  [36m15[0m  [36m    :open @drawer1}[0m
+  [33m16[0m  [1m   [ui/List[0m
+  [0m  [0m  [33m    ^--- Use of undeclared Var cljs-react-material-ui.reagent/List[0m
+  [36m17[0m  [36m    [ui/ListItem {:leftIcon (el)}]]]))[0m
+
+[36m----  Compiler Warning : Please see src/cljs/fool/components/ml.cljs  ----[0m
+[36m----  Compiler Warning on   src/cljs/fool/components/ml.cljs   line:17  column:8  ----[0m
+
+  [1mUse of undeclared Var cljs-react-material-ui.reagent/ListItem[0m
+
+  [36m13[0m  [36m[ui/drawer[0m
+  [36m14[0m  [36m {:docked false[0m
+  [36m15[0m  [36m  :open @drawer1}[0m
+  [36m16[0m  [36m [ui/List[0m
+  [33m17[0m  [1m  [ui/ListItem {:leftIcon (el)}]]]))[0m
+  [0m  [0m  [33m   ^--- Use of undeclared Var cljs-react-material-ui.reagent/ListItem[0m
+
+[36m----  Compiler Warning : Please see src/cljs/fool/components/ml.cljs  ----[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.755 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/fool/components/ml.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[36m----  Compiler Warning on   src/cljs/fool/components/ml.cljs   line:17  column:7  ----[0m
+
+  [1mUse of undeclared Var cljs-react-material-ui.reagent/List[0m
+
+  [36m13[0m  [36m    close #(reset! drawer1 false)][0m
+  [36m14[0m  [36m[ui/drawer[0m
+  [36m15[0m  [36m {:docked false[0m
+  [36m16[0m  [36m  :open @drawer1}[0m
+  [33m17[0m  [1m [ui/List[0m
+  [0m  [0m  [33m  ^--- Use of undeclared Var cljs-react-material-ui.reagent/List[0m
+  [36m18[0m  [36m  [ui/ListItem {:leftIcon (el [:i.material-icons "Home"])[0m
+  [36m19[0m  [36m                :on-click (fn [][0m
+  [36m20[0m  [36m                            (close))}]]]))[0m
+
+[36m----  Compiler Warning : Please see src/cljs/fool/components/ml.cljs  ----[0m
+[36m----  Compiler Warning on   src/cljs/fool/components/ml.cljs   line:18  column:8  ----[0m
+
+  [1mUse of undeclared Var cljs-react-material-ui.reagent/ListItem[0m
+
+  [36m14[0m  [36m[ui/drawer[0m
+  [36m15[0m  [36m {:docked false[0m
+  [36m16[0m  [36m  :open @drawer1}[0m
+  [36m17[0m  [36m [ui/List[0m
+  [33m18[0m  [1m  [ui/ListItem {:leftIcon (el [:i.material-icons "Home"])[0m
+  [0m  [0m  [33m   ^--- Use of undeclared Var cljs-react-material-ui.reagent/ListItem[0m
+  [36m19[0m  [36m                :on-click (fn [][0m
+  [36m20[0m  [36m                            (close))}]]]))[0m
+
+[36m----  Compiler Warning : Please see src/cljs/fool/components/ml.cljs  ----[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.779 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/fool/components/ml.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[36m----  Compiler Warning on   src/cljs/fool/components/ml.cljs   line:18  column:8  ----[0m
+
+  [1mUse of undeclared Var cljs-react-material-ui.reagent/ListItem[0m
+
+  [36m14[0m  [36m[ui/drawer[0m
+  [36m15[0m  [36m {:docked false[0m
+  [36m16[0m  [36m  :open @drawer1}[0m
+  [36m17[0m  [36m [:li[0m
+  [33m18[0m  [1m  [ui/ListItem {:leftIcon (el [:i.material-icons "Home"])[0m
+  [0m  [0m  [33m   ^--- Use of undeclared Var cljs-react-material-ui.reagent/ListItem[0m
+  [36m19[0m  [36m                :on-click (fn [][0m
+  [36m20[0m  [36m                            (close))}]]]))[0m
+
+[36m----  Compiler Warning : Please see src/cljs/fool/components/ml.cljs  ----[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.704 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/fool/components/ml.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.611 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/fool/components/ml.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.763 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/fool/components/ml.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[31mFailed to compile "target/cljsbuild/public/js/app.js" in 0.599 seconds.[0m
+[36m----  Could not Analyze  src/cljs/fool/components/ml.cljs  ----[0m
+
+  [1mNo such namespace: cljs-react-material-ui.elements, could not locate cljs_react_material_ui/elements.cljs, cljs_react_material_ui/elements.cljc, or JavaScript source providing "cljs-react-material-ui.elements" [0m
+
+[36m----  Analysis Error : Please see src/cljs/fool/components/ml.cljs  ----[0m
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.749 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/fool/components/ml.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[36m----  Compiler Warning on   src/cljs/fool/components/ml.cljs   line:18  column:7  ----[0m
+
+  [1mUse of undeclared Var cljs-react-material-ui.core/List[0m
+
+  [36m14[0m  [36m    close #(reset! drawer1 false)][0m
+  [36m15[0m  [36m[ui/drawer[0m
+  [36m16[0m  [36m {:docked false[0m
+  [36m17[0m  [36m  :open @drawer1}[0m
+  [33m18[0m  [1m [mui/List[0m
+  [0m  [0m  [33m  ^--- Use of undeclared Var cljs-react-material-ui.core/List[0m
+  [36m19[0m  [36m  {:leftIcon (el [:i.material-icons "Home"])[0m
+  [36m20[0m  [36m       :on-click (fn [] (close))}]]))[0m
+
+[36m----  Compiler Warning : Please see src/cljs/fool/components/ml.cljs  ----[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.704 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/fool/components/ml.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.725 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/fool/components/ml.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[36m----  Compiler Warning on   src/cljs/fool/components/ml.cljs   line:23  column:8  ----[0m
+
+  [1mUse of undeclared Var cljs-react-material-ui.reagent/Divider[0m
+
+  [36m19[0m  [36m[mui/list-item[0m
+  [36m20[0m  [36m {:leftIcon (el [:i.material-icons "Home"])[0m
+  [36m21[0m  [36m  :on-click (fn [] (close))}[0m
+  [36m22[0m  [36m "Home"][0m
+  [33m23[0m  [1m[ui/Divider]]]))[0m
+  [0m  [0m  [33m ^--- Use of undeclared Var cljs-react-material-ui.reagent/Divider[0m
+
+[36m----  Compiler Warning : Please see src/cljs/fool/components/ml.cljs  ----[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.667 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/fool/components/ml.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.685 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/fool/components/ml.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.651 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/fool/components/ml.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.672 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/cljs_deps.js
+notifying browser that file changed:  target/cljsbuild/public/js/out/fool/core.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[31mFailed to compile "target/cljsbuild/public/js/app.js" in 0.467 seconds.[0m
+[36m----  Could not Analyze  src/cljs/fool/core.cljs   line:69  column:1  ----[0m
+
+  [1mUnable to resolve var: sample-nav in this context at line 69 /home/elect/GitHub/fool/src/cljs/fool/core.cljs[0m
+
+  [36m67[0m  [36m       ]])])[0m
+  [36m68[0m  [36m[0m
+  [33m69[0m  [1m(def pages[0m
+  [0m  [0m  [33m^--- Unable to resolve var: sample-nav in this context at line 69 /home/elect/GitHub/fool/src/cljs/fool/core.cljs[0m
+  [36m70[0m  [36m  {:home #'home-page[0m
+  [36m71[0m  [36m   :about #'about-page[0m
+  [36m72[0m  [36m   :material #'material/home-page[0m
+
+[36m----  Analysis Error : Please see src/cljs/fool/core.cljs  ----[0m
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.728 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/fool/core.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.659 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/fool/core.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.696 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/fool/core.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.686 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/fool/core.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.72 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/fool/components/ml.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.647 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/fool/components/ml.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[36m----  Compiler Warning on   src/cljs/fool/components/ml.cljs   line:17  column:9  ----[0m
+
+  [1mUse of undeclared Var cljs-react-material-ui.reagent/muii-theme-provider[0m
+
+  [36m13[0m  [36m(let [drawer1 (atom false)[0m
+  [36m14[0m  [36m      close #(reset! drawer1 false)][0m
+  [36m15[0m  [36m  (fn [][0m
+  [36m16[0m  [36m    [:div[0m
+  [33m17[0m  [1m     [ui/muii-theme-provider {:mui-theme (ui/get-mui-theme)}[0m
+  [0m  [0m  [33m      ^--- Use of undeclared Var cljs-react-material-ui.reagent/muii-theme-provider[0m
+  [36m18[0m  [36m      [ui/drawer[0m
+  [36m19[0m  [36m       {:docked false[0m
+  [36m20[0m  [36m        :open @drawer1}[0m
+  [36m21[0m  [36m       [mui/list[0m
+  [36m22[0m  [36m        [mui/list-item[0m
+
+[36m----  Compiler Warning : Please see src/cljs/fool/components/ml.cljs  ----[0m
+[36m----  Compiler Warning on   src/cljs/fool/components/ml.cljs   line:17  column:45  ----[0m
+
+  [1mUse of undeclared Var cljs-react-material-ui.reagent/get-mui-theme[0m
+
+  [36m13[0m  [36m(let [drawer1 (atom false)[0m
+  [36m14[0m  [36m      close #(reset! drawer1 false)][0m
+  [36m15[0m  [36m  (fn [][0m
+  [36m16[0m  [36m    [:div[0m
+  [33m17[0m  [1m     [ui/muii-theme-provider {:mui-theme (ui/get-mui-theme)}[0m
+  [0m  [0m  [33m                                          ^--- Use of undeclared Var cljs-react-material-ui.reagent/get-mui-theme[0m
+  [36m18[0m  [36m      [ui/drawer[0m
+  [36m19[0m  [36m       {:docked false[0m
+  [36m20[0m  [36m        :open @drawer1}[0m
+  [36m21[0m  [36m       [mui/list[0m
+  [36m22[0m  [36m        [mui/list-item[0m
+
+[36m----  Compiler Warning : Please see src/cljs/fool/components/ml.cljs  ----[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.705 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/fool/components/ml.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[36m----  Compiler Warning on   src/cljs/fool/components/ml.cljs   line:17  column:44  ----[0m
+
+  [1mUse of undeclared Var cljs-react-material-ui.reagent/get-mui-theme[0m
+
+  [36m13[0m  [36m(let [drawer1 (atom false)[0m
+  [36m14[0m  [36m      close #(reset! drawer1 false)][0m
+  [36m15[0m  [36m  (fn [][0m
+  [36m16[0m  [36m    [:div[0m
+  [33m17[0m  [1m     [ui/mui-theme-provider {:mui-theme (ui/get-mui-theme)}[0m
+  [0m  [0m  [33m                                         ^--- Use of undeclared Var cljs-react-material-ui.reagent/get-mui-theme[0m
+  [36m18[0m  [36m      [ui/drawer[0m
+  [36m19[0m  [36m       {:docked false[0m
+  [36m20[0m  [36m        :open @drawer1}[0m
+  [36m21[0m  [36m       [mui/list[0m
+  [36m22[0m  [36m        [mui/list-item[0m
+
+[36m----  Compiler Warning : Please see src/cljs/fool/components/ml.cljs  ----[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.674 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/fool/components/ml.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.647 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/fool/components/ml.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.646 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/fool/components/ml.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.674 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/fool/components/ml.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.625 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/fool/components/ml.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.638 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/fool/core.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.699 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/fool/components/ml.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.651 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/fool/components/ml.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.621 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/fool/components/ml.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.647 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/fool/components/ml.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.722 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/fool/components/ml.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.626 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/fool/components/ml.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.704 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/fool/components/ml.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.636 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/fool/components/ml.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.661 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/fool/components/ml.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.681 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/fool/components/ml.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.67 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/fool/components/ml.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.68 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/fool/components/ml.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.68 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/fool/components/ml.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.652 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/fool/components/ml.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.677 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/fool/components/ml.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.645 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/fool/components/ml.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.686 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/fool/components/ml.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.804 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/fool/components/ml.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.648 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/fool/components/ml.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.666 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/fool/components/ml.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.791 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/fool/components/ml.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.694 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/fool/components/ml.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.671 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/fool/components/ml.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.639 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/fool/components/ml.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.675 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/fool/components/ml.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.635 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/fool/components/ml.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[36m----  Compiler Warning on   src/cljs/fool/components/ml.cljs   line:25  column:12  ----[0m
+
+  [1mUse of undeclared Var cljs-react-material-ui.reagent/button[0m
+
+  [36m21[0m  [36m     :on-left-icon-button-touch-tap #(reset! drawer1 true)}[0m
+  [36m22[0m  [36m[ui/drawer[0m
+  [36m23[0m  [36m     {:docked false[0m
+  [36m24[0m  [36m      :open @drawer1}[0m
+  [33m25[0m  [1m [ui/button {:on-click (close)} "Menu-item"]]]]])))[0m
+  [0m  [0m  [33m  ^--- Use of undeclared Var cljs-react-material-ui.reagent/button[0m
+
+[36m----  Compiler Warning : Please see src/cljs/fool/components/ml.cljs  ----[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.693 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/fool/components/ml.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[36m----  Compiler Warning on   src/cljs/fool/components/ml.cljs   line:25  column:12  ----[0m
+
+  [1mUse of undeclared Var cljs-react-material-ui.core/button[0m
+
+  [36m21[0m  [36m     :on-left-icon-button-touch-tap #(reset! drawer1 true)}[0m
+  [36m22[0m  [36m[ui/drawer[0m
+  [36m23[0m  [36m     {:docked false[0m
+  [36m24[0m  [36m      :open @drawer1}[0m
+  [33m25[0m  [1m [mui/button {:on-click (close)} "Menu-item"]]]]])))[0m
+  [0m  [0m  [33m  ^--- Use of undeclared Var cljs-react-material-ui.core/button[0m
+
+[36m----  Compiler Warning : Please see src/cljs/fool/components/ml.cljs  ----[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.659 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/fool/components/ml.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[36m----  Compiler Warning on   src/cljs/fool/components/ml.cljs   line:25  column:12  ----[0m
+
+  [1mUse of undeclared Var cljs-react-material-ui.reagent/button[0m
+
+  [36m21[0m  [36m     :on-left-icon-button-touch-tap #(reset! drawer1 true)}[0m
+  [36m22[0m  [36m[ui/drawer[0m
+  [36m23[0m  [36m     {:docked false[0m
+  [36m24[0m  [36m      :open @drawer1}[0m
+  [33m25[0m  [1m [ui/button {:on-click (close)} "Menu-item"]]]]])))[0m
+  [0m  [0m  [33m  ^--- Use of undeclared Var cljs-react-material-ui.reagent/button[0m
+
+[36m----  Compiler Warning : Please see src/cljs/fool/components/ml.cljs  ----[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.732 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/fool/components/ml.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[36m----  Compiler Warning on   src/cljs/fool/components/ml.cljs   line:24  column:12  ----[0m
+
+  [1mUse of undeclared Var cljs-react-material-ui.reagent/button[0m
+
+  [36m20[0m  [36m     :on-left-icon-button-touch-tap #(reset! drawer1 true)}[0m
+  [36m21[0m  [36m[ui/drawer[0m
+  [36m22[0m  [36m     {:docked false[0m
+  [36m23[0m  [36m      :open @drawer1}[0m
+  [33m24[0m  [1m [ui/button {:on-click (close)} "Menu-item"]]]]])))[0m
+  [0m  [0m  [33m  ^--- Use of undeclared Var cljs-react-material-ui.reagent/button[0m
+
+[36m----  Compiler Warning : Please see src/cljs/fool/components/ml.cljs  ----[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.617 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/cljs_deps.js
+notifying browser that file changed:  target/cljsbuild/public/js/out/fool/components/ml.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[36m----  Compiler Warning on   src/cljs/fool/components/ml.cljs   line:24  column:12  ----[0m
+
+  [1mUse of undeclared Var cljs-react-material-ui.reagent/button[0m
+
+  [36m20[0m  [36m     :on-left-icon-button-touch-tap #(reset! drawer1 true)}[0m
+  [36m21[0m  [36m[ui/drawer[0m
+  [36m22[0m  [36m     {:docked false[0m
+  [36m23[0m  [36m      :open @drawer1}[0m
+  [33m24[0m  [1m [ui/button {:on-click (close)} "Menu-item"]]]]])))[0m
+  [0m  [0m  [33m  ^--- Use of undeclared Var cljs-react-material-ui.reagent/button[0m
+
+[36m----  Compiler Warning : Please see src/cljs/fool/components/ml.cljs  ----[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.687 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/fool/components/ml.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.682 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/fool/components/ml.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.628 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/fool/components/ml.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.685 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/fool/components/ml.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.653 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/fool/components/ml.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.705 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/fool/components/ml.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.693 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/fool/components/ml.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.622 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/fool/components/ml.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.666 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/fool/components/ml.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.659 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/fool/components/ml.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.677 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/fool/components/ml.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.671 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/fool/components/ml.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.658 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/fool/components/ml.js
+Notifying browser that CSS file changed: resources/public/css/screen.css
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.706 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/fool/components/ml.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.63 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/fool/components/ml.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.651 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/fool/components/ml.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.621 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/fool/components/ml.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.644 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/fool/components/ml.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.66 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/fool/components/ml.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.729 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/fool/components/ml.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.678 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/fool/components/ml.js
+Notifying browser that CSS file changed: resources/public/css/screen.css
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.608 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/cljs_deps.js
+notifying browser that file changed:  target/cljsbuild/public/js/out/fool/components/material_ui.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.62 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/fool/core.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.634 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/cljs_deps.js
+notifying browser that file changed:  target/cljsbuild/public/js/out/fool/components/ml.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.59 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/cljs_deps.js
+notifying browser that file changed:  target/cljsbuild/public/js/out/fool/components/material_ui.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.709 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/fool/components/ml.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.661 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/fool/components/ml.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.618 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/fool/components/ml.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.684 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/fool/components/ml.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.635 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/fool/core.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.702 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/fool/core.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.611 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/fool/components/ml.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.648 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/fool/components/ml.js
