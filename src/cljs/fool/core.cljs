@@ -11,7 +11,7 @@
             [fool.components.registration :as reg]
             [fool.components.login :as l]
             [fool.components.user-menu :as user-menu]
-            [fool.components.material_ui :as material]
+            ;; [fool.components.material_ui :as material]
             [fool.components.ml :as ml])
   (:import goog.History))
 
@@ -48,8 +48,10 @@
         [:ul.nav.navbar-nav.mr-auto
          [nav-link "#/" "Home" :home]
          [nav-link "#/about" "About" :about]
-         [nav-link "#/material" "Material" :material]
-         [nav-link "#/ml" "Machine-Learning" :ml]]
+         ;; [nav-link "#/material" "Material" :material]
+         (when-let [id (session/get :identity)]
+           [nav-link "#/ml" "Machine-Learning" :ml])
+         ]
         ]
        [user-menu]])))
 
@@ -71,13 +73,12 @@
 (def pages
   {:home #'home-page
    :about #'about-page
-   :material #'material/home-page
-   :ml #'ml/ml-settings})
+   ;; :material #'material/home-page
+   :ml #'ml/ml-settings
+   })
 
 (defn page []
   [:div
-   ;; modal test
-   ;; [reg/registration-form]
    (when-let [session-modal (session/get :modal)]
      [session-modal])
    [(pages (session/get :page))]])
@@ -92,8 +93,8 @@
 (secretary/defroute "/about" []
   (session/put! :page :about))
 
-(secretary/defroute "/material" []
-  (session/put! :page :material))
+;; (secretary/defroute "/material" []
+;;   (session/put! :page :material))
 
 (secretary/defroute "/ml" []
   (session/put! :page :ml))

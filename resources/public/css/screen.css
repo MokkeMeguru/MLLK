@@ -91,6 +91,10 @@ body {
     }
 }
 
+/* container */
+.container {
+    z-index: 1;
+}
 /* modal */
 .modal-dialog {
     z-index: 100;
@@ -106,3 +110,4 @@ body {
     background-color:#000000;
     opacity:0.5;
 }
+
