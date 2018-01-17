@@ -89,7 +89,6 @@
 ;;                                     :end_date (clj-time.core/date-time 2018 1 6)})
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
-
 (defn get-tsdb
   "
   start ... clj-time or Long
@@ -102,7 +101,7 @@
    & {:keys [downsample aggregator ms-resolution
              global-annotations show-query]
       :or {downsample "1d-avg"
-           aggregator "sum"
+           aggregator "none"
            ms-resolution false
            global-annotations true
            show-query true}}]
@@ -111,9 +110,9 @@
         end (if (= (type end-) java.lang.Long)
                 end- (clj-time.coerce/to-long end-))]
    (try
-     (if (connection-check!)
+     (if (= "connection to OpenTSDB is refused" connection-check!)
        "connection to OpenTSDB is refused"
-       (-> (client/post uri
+       (-> (client/post "http://localhost:4242/api/query"
                        {:content-type :json
                         :form-params
                         {"start" (clj-time.coerce/to-long start)

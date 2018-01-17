@@ -17,7 +17,7 @@
         param-map (atom {})
         op (atom nil)
         close #(do (reset! draw false)
-                   (reset! op 0))
+                   (reset! op nil))
         open (fn [i] (reset! op i))]
     (fn []
       [:div.container.col-md-12
@@ -78,13 +78,14 @@
              [:br]
              [ui/divider]
              [:br]
-             (when @op
-                 [ui/card
-                  (r/as-element [ui/card-title {:title @op}])
-                  (r/as-element [ui/card-text [:div [:p "Reference:"] [:p "Open below link in new tab"] [:br] [:p "link"]]])
-                  (r/as-element [ui/card-actions
-                                 (r/as-element [ui/text-field {:hint-text "ex." :floating-label-text "Type"}])
-                                 (r/as-element [ui/text-field {:hint-text "ex." :floating-label-text "Type"}])])])
+             (when-not (nil? @op)
+               [ui/card
+                (r/as-element [ui/card-title {:title #(if (nil? @op) "Param" nil)}])
+                (r/as-element [ui/card-text [:div [:p "Reference:"] [:p "Open below link in new tab"] [:br] [:p "link"]]])
+                   (r/as-element [ui/card-actions
+                                  (r/as-element [ui/text-field {:hint-text "ex." :floating-label-text "Type"}])
+                                  (r/as-element [ui/text-field {:hint-text "ex." :floating-label-text "Type"}])])]
+               )
 
              [:br]
              [ui/divider]
