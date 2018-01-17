@@ -6,7 +6,8 @@
             [buddy.auth.accessrules :refer [restrict]]
             [buddy.auth :refer [authenticated?]]
             [fool.routes.services.auth :as auth]
-            [fool.routes.services.api :as api]))
+            [fool.routes.services.api :as api]
+            [fool.routes.services.ml :as ml]))
 
 ;; ---------------------------------------------------------------------
 (defn access-error [_ _]
@@ -24,6 +25,40 @@
   [_ binding acc]
   (update-in acc [:letks] into [binding `(:identity ~'+compojure-api-request+)]))
 ;; ----------------------------------------------------------------------
+
+(s/defschema ArimaParameter
+  {:id s/Str
+   :data {:start Long
+          :end Long
+          :title String
+          :type String}
+   :diff Number
+   (s/optional-key :adf) Integer
+   (s/optional-key :acf) Integer
+   (s/optional-key :pacf) Integer
+   (s/optional-key :arima) {:type String
+                            :p Integer
+                            :q Integer
+                            :len Integer}
+   (s/optional-key :option) String})
+
+(s/defschema ArimaResult
+  {:result s/Keyword
+   (s/optional-key :message) String
+   (s/optional-key :run-result)
+   {:data {:date [Double]
+           :data [Double]}
+    :diff [Double]
+    (s/optional-key :adf) {:adf Double :reject? Boolean}
+    (s/optional-key :acf) {:val [Double] :threshold Double}
+    (s/optional-key :pacf) {:val [Double] :threshold Double}
+    (s/optional-key :arima) {:upper [Double]
+                             :lower [Double]
+                             :p [Double]
+                             :q [Double]
+                             :n Long
+                             :d Integer
+                             :aic Double}}})
 
 (s/defschema UserRegistration
   {:name String
@@ -70,9 +105,23 @@
   (POST "/logout" []
         :return Result
         :summary "logout the user and remove the session"
-        (auth/logout!)))
-
-
+        (auth/logout!))
+  (context "/ml" []
+           :tags ["Machine Learning"]
+           (POST "/arima" []
+                 :return ArimaResult
+                 :body [arimaparam ArimaParameter]
+                 :summary "machine learning : ARIMA"
+                 (fn [arimparam]
+                   (let [res (ml/arima-parser arimparam)]
+                     (if (string? res)
+                       (-> {:result :error}
+                           (update :message
+                                   (str "Machine Learning Exception : " res))
+                           (ring.util.http-response/bad-request))
+                       (-> {:result :ok}
+                           (assoc :run-result res)
+                           (ring.util.http-response/ok))))))))
 
 ;; (defapi service-routes
 ;;   {:swagger {:ui "/swagger-ui"
