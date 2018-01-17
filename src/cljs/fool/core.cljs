@@ -12,7 +12,8 @@
             [fool.components.login :as l]
             [fool.components.user-menu :as user-menu]
             ;; [fool.components.material_ui :as material]
-            [fool.components.ml :as ml])
+            [fool.components.ml :as ml]
+            [fool.components.charting :as chart])
   (:import goog.History))
 
 ;; user-menu ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
@@ -75,7 +76,7 @@
    :about #'about-page
    ;; :material #'material/home-page
    :ml #'ml/ml-settings
-   })
+   :chart #'chart/graph-view})
 
 (defn page []
   [:div
@@ -98,6 +99,9 @@
 
 (secretary/defroute "/ml" []
   (session/put! :page :ml))
+
+(secretary/defroute "/chart" []
+  (session/put! :page :chart))
 ;; -------------------------
 ;; History
 ;; must be called after routes have been defined

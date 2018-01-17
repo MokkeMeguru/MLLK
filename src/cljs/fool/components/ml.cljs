@@ -8,7 +8,61 @@
    [cljs-react-material-ui.core :as mui]
    [reagent.core :as r :refer [atom]]))
 
-(defn request-result [type params]
+(def req-parameters
+  (atom {:data nil
+         :diff nil
+         :adf nil
+         :acf nil
+         :pacf nil
+         :arima nil}))
+
+(def req-param-info
+  {:data [:div [:h3 "Variable"
+                [:pre] [:p "start: start-date"]
+                [:pre] [:p "end: end-date"]
+                [:pre] [:p "title: title"]
+                [:pre] [:p "type: title"]
+                [:p.text-center "------"]
+                [:p "Notice: We will use quandl's data"]
+                [:p "Reference: " [:pre]
+                 [:a {:href "http://localhost:4000"} "Time Series Data"]]]]
+   :diff [:div [:h3 "Variable"
+                [:pre] [:p "diff: difference"]
+                [:p.text-center "-----"]
+                [:p "Notice: N differeced data's length is N less than original's"]
+                [:p "Reference: " [:pre]
+                 [:a {:href "http://localhost:4000"} "Difference"]]]]
+   :adf [:div [:h3 "Variable"
+               [:pre] [:p "adf: difference"]
+               [:p.text-center "-----"]
+               [:p "Notice: adf test with N differeced data"]
+               [:p "Reference: " [:pre]
+                [:a {:href "http://localhost:4000"} "ADF-test"]]]]
+   :acf [:div [:h3 "Variable"
+               [:pre] [:p "acf: value's number"]
+               [:p.text-center "-----"]
+               [:p "Notice: show N acf's values"]
+               [:p "Reference: " [:pre]
+                [:a {:href "http://localhost:4000"} "Autocorrelation"]]]]
+   :pacf [:div [:h3 "Variable"
+                [:pre] [:p "pacf: value's number"]
+                [:p.text-center "-----"]
+                [:p "Notice: show N pacf's values"]
+                [:p "Reference: " [:pre]
+                 [:a {:href "http://localhost:4000"} "Partial-Autocorrelation"]]]]
+   :arima [:div [:h3 "Variable"
+                 [:pre] [:p "type: \"single\" or \"multi\""]
+                 [:pre] [:p "p: autoreggresive's coefficient"]
+                 [:pre] [:p "q: moving-average's coefficient"]
+                 [:pre] [:p "len: predict value's number"]
+                 [:p.text-center "-----"]
+                 [:p "Notice: Arima predict with difference's diff"]
+                 [:p "Recommend: len < (data's length / 10)"]
+                 [:p "Reference: " [:pre]
+                  [:a {:href "http://localhost:4000"} "ARIMA"]]]]})
+
+
+(defn request->result [params]
   )
 
 (defn ml-settings []
@@ -18,7 +72,9 @@
         op (atom nil)
         close #(do (reset! draw false)
                    (reset! op nil))
-        open (fn [i] (reset! op i))]
+        open (fn [i] (reset! op i))
+        result (atom nil)
+        run (atom nil)]
     (fn []
       [:div.container.col-md-12
        [ui/mui-theme-provider
@@ -106,4 +162,10 @@
              [:br]
              [:br]
              [:div.text-center [ui/raised-button {:label "back" :on-click #(close)}]]
-             ])]]]])))
+             ])
+          ]]]
+       [:div
+        (if-not @draw [fool.components.charting/home])]
+       [:br]
+       [:div
+        (if-not @draw [fool.components.charting/home])]])))
