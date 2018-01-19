@@ -28,18 +28,18 @@
 
 (s/defschema ArimaParameter
   {:id s/Str
-   :data {:start Long
-          :end Long
+   :data {:start s/Num
+          :end s/Num
           :title String
           :type String}
-   :diff Number
-   (s/optional-key :adf) Integer
-   (s/optional-key :acf) Integer
-   (s/optional-key :pacf) Integer
+   :diff s/Num
+   (s/optional-key :adf) s/Num
+   (s/optional-key :acf) s/Num
+   (s/optional-key :pacf) s/Num
    (s/optional-key :arima) {:type String
-                            :p Integer
-                            :q Integer
-                            :len Integer}
+                            :p s/Num
+                            :q s/Num
+                            :len s/Num}
    (s/optional-key :option) String})
 
 (s/defschema ArimaResult
@@ -56,8 +56,8 @@
                              :lower [Double]
                              :p [Double]
                              :q [Double]
-                             :n Long
-                             :d Integer
+                             :n s/Num
+                             :d s/Num
                              :aic Double}}})
 
 (s/defschema UserRegistration
@@ -109,19 +109,19 @@
   (context "/ml" []
            :tags ["Machine Learning"]
            (POST "/arima" []
-                 :return ArimaResult
-                 :body [arimaparam ArimaParameter]
-                 :summary "machine learning : ARIMA"
-                 (fn [arimparam]
-                   (let [res (ml/arima-parser arimparam)]
-                     (if (string? res)
-                       (-> {:result :error}
-                           (update :message
-                                   (str "Machine Learning Exception : " res))
-                           (ring.util.http-response/bad-request))
-                       (-> {:result :ok}
-                           (assoc :run-result res)
-                           (ring.util.http-response/ok))))))))
+                :return ArimaResult
+                :body [arimaparam ArimaParameter]
+                :summary "machine learning : ARIMA"
+                (fn [arimparam]
+                  (let [res (ml/arima-parser arimparam)]
+                    (if (string? res)
+                      (-> {:result :error}
+                          (update :message
+                                  (str "Machine Learning Exception : " res))
+                          (ring.util.http-response/bad-request))
+                      (-> {:result :ok}
+                          (assoc :run-result res)
+                          (ring.util.http-response/ok))))))))
 
 ;; (defapi service-routes
 ;;   {:swagger {:ui "/swagger-ui"

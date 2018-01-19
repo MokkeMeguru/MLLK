@@ -1,5 +1,7 @@
 (ns fool.components.common
-  (:require [reagent.core :refer [atom]]))
+  (:require [cljsjs.material-ui]
+            [reagent.core :as r :refer [atom]]
+            [cljs-react-material-ui.reagent :as ui]))
 
 (defn modal [header body footer]
   [:div
@@ -51,3 +53,14 @@
 (defn ni-password-input [label id placeholder fields & [optional?]]
   (ni-form-input :password label id placeholder fields optional?))
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+(defn material-field [hint flt valfunc swapfunc]
+  (r/as-element [ui/text-field {:hint-text hint :floating-label-text flt
+                                :value valfunc :on-change swapfunc}]))
+
+(defn datepick-field [hint valfunc changefunc]
+  (r/as-element [ui/date-picker {:hint-text hint
+                                 :value valfunc
+                                 :on-change changefunc
+                                 :input-style
+                                 {:text-align "center"}}]))

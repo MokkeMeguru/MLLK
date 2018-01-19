@@ -89,7 +89,7 @@
         "ARIMA: Unknown Type"))))
 ;; ----------------------------------------------------------------------------
 
-
+;; danger  update let [req-start ... req-end ...] 
 (defn parse-order-week
   "
   date is
@@ -101,8 +101,8 @@
   (try
     (if (and id data diff)
       (if (> 2 re?)
-        (let [req-start (:start data)
-              req-end (:end data)
+        (let [req-start (if (< (:start data) (:end data)) (:start data) (:end data))
+              req-end (if (< (:start data) (:end data)) (:end data) (:start data))
               title (:title data)
               type- (:type data)]
           (if (and (not (and (nil? req-start) (nil? req-end)
@@ -228,9 +228,25 @@
 
 ;; (def bpp (arima-parser bp))
 
-
 ;; (remove #(nil? (first (vals %))) (arima-parser bp))
 ;; (nil? (first (vals  {:a nil})))
 ;; (def bppp
 ;;   (into {} (filter second bpp)))
 ;; (type (:n (:arima bppp)))
+
+;; {
+;;  "id": "elect",
+;;  "data": {
+;;           "start": 1480550400000000,
+;;           "end": 1516406400000000,
+;;           "title": "NIKKEI/INDEX",
+;;           "type": "close-price"
+;;           },
+;;  "diff": 0,
+;;  "adf" : 0,
+;;  "acf" : 0,
+;;  "pacf" : 0,
+;;  "arima" : {"type" : "single",
+;;             "p": 2,
+;;             "q": 1,
+;;             "len" : 10}}

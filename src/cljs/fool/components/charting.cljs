@@ -46,7 +46,7 @@
 
 ;; ------------------------------------------------------------------
 (def chart-config
-  {:chart {:type "column"}
+  {:chart {:type "line"}
    :title {:text "Historic World Population by Region"}
    :subtitle {:text "Source: Wikipedia.org"}
    :xAxis {:categories ["Africa" "America" "Asia" "Europe" "Oceania"]
@@ -100,3 +100,81 @@
        [:div [:div#d3-node [:svg ]]
         [home]]
        ])))
+
+;; ------------------------------------------------------------------------
+;; create graph
+
+(defn arima-line-chart-config*
+  "start must be js/Data"
+  [title start series]
+  {:chart {:type "line"
+           :zoomType "x"}
+   :title {:text title}
+   ;; :subtitle {:text "Source: Wikipedia.org"}
+   :xAxis {:type "datetime"
+           :title {:text nil}}
+   :yAxis {:title {:text "Values"
+                   :align "high"}
+           :labels {:overflow "justify"}}
+   :plotOptions {:bar {:dataLabels {:enabled true}}
+                 :series {:pointStart start
+                          :pointInterval (* 7 24 3600 1000)}}
+   :legend {:layout "vertical"
+            :align "right"
+            :verticalAlign "top"
+            :x -40
+            :y 100
+            :floating true
+            :borderWidth 1
+            :shadow true}
+   :credits {:enabled false}
+   :series series
+   })
+
+(defn arima-line-chart-did-mount [this chart-info]
+  (js/Highcharts.Chart. (reagent/dom-node this)
+                        (clj->js chart-info)))
+
+(defn arima-line-chart [title start series]
+  (let [chart-info (arima-line-chart-config* title start series)]
+    (reagent/create-class
+     {:reagent-render home-render
+      :component-did-mount #(arima-line-chart-did-mount % chart-info)})))
+
+;; --------------------------------------------------
+
+(defn arima-bar-chart-config*
+  "start must be js/Data"
+  [title series threshold]
+  {:chart {:type "column"
+           :zoomType "x"}
+   :title {:text title}
+   :subtitle {:text threshold}
+   :xAxis {:type "number"
+           :title {:text nil}}
+   :yAxis {
+           :title {:text "Values"
+                   :align "high"}
+           :labels {:overflow "justify"}}
+   :plotOptions {:bar {:dataLabels {:enabled true}}}
+   :legend {:layout "vertical"
+            :align "right"
+            :verticalAlign "top"
+            :x -40
+            :y 100
+            :floating true
+            :borderWidth 1
+            :shadow true}
+   :credits {:enabled false}
+   :series series
+   })
+
+(defn arima-bar-chart-did-mount [this arima-bar-chart-config]
+  (js/Highcharts.Chart. (reagent/dom-node this)
+                        (clj->js arima-bar-chart-config)))
+
+(defn arima-bar-chart [title series threshold]
+  (let [bar-info (arima-bar-chart-config* title series threshold)]
+    (reagent/create-class
+     {:reagent-render home-render
+      :component-did-mount #(arima-line-chart-did-mount % bar-info)})))
