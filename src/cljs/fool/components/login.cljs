@@ -42,7 +42,7 @@
         error (atom nil)]
     (fn []
       [c/modal
-       [:div "fool Login"]
+       [:div "MLLK Login"]
        [:div
         [:div.well.well-sm
          [:strong "* required fields"]]
