@@ -44,7 +44,7 @@
         {:type "button"
          :data-toggle "collapse"
          :data-target "#collapsing-navbar"} "☰"]
-       [:a.navbar-brand {:href "#/"} "fool"]
+       [:a.navbar-brand {:href "#/"} "MLLK"]
        [:div#collapsing-navbar.collapse.navbar-collapse
         [:ul.nav.navbar-nav.mr-auto
          [nav-link "#/" "Home" :home]

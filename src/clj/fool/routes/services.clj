@@ -70,11 +70,11 @@
    (s/optional-key :message) String})
 
 (defapi restricted-service-routes
-  {:swagger {:ui "/swagger-ui-private"
+  {:swagger {:ui "/swagger-private-ui"
              :spec "/swagger-private.json"
-             :data {:into {:version "1.0.0"
-                           :title "fool API"
-                           :description "Public Services"}}}}
+             :data {:info {:version "1.0.0"
+                           :title "MLLK private API"
+                           :description "Private Services"}}}}
   (POST "/apikey-test" req
         :return Result
         :header-params [api-key :- String]
@@ -90,8 +90,8 @@
   {:swagger {:ui "/swagger-ui"
              :spec "/swagger.json"
              :data {:info {:version "1.0.0"
-                           :title "fool private API"
-                           :description "Privte Services"}}}}
+                           :title "MLLK public API"
+                           :description "Public Services"}}}}
   (POST "/register" req
         :return Result
         :body [user UserRegistration]

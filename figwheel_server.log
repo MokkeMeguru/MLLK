@@ -8889,3 +8889,14 @@ notifying browser that file changed:  target/cljsbuild/public/js/out/fool/compon
 [0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
 [32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.726 seconds.[0m
 notifying browser that file changed:  target/cljsbuild/public/js/out/fool/components/ml.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.632 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/fool/core.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.674 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/fool/components/login.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 1.415 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/goog/deps.js
+notifying browser that file changed:  target/cljsbuild/public/js/out/cljs_deps.js
+notifying browser that file changed:  target/cljsbuild/public/js/out/fool/components/registration.js

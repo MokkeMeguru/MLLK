@@ -22,7 +22,7 @@
         error (atom nil)]
     (fn []
       [c/modal
-       [:div "fool Registration"]
+       [:div "MLLK Registration"]
        [:div
         [:div.well.well-sm
          [:strong "* required fields"]]
