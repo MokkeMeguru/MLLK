@@ -10,4 +10,4 @@ It can not be executed because environment setting is complexity.
 
 ## License
 
-Copyright © 2018 FIXME
+APL3
