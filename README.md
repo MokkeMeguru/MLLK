@@ -10,4 +10,7 @@ It can not be executed because environment setting is complexity.
 
 ## License
 
-APL3
+
+Copyright © 2018      
+Distributed under the Eclipse Public License either version 1.0 or (at
+your option) any later version.
