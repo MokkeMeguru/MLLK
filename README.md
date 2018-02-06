@@ -1,20 +1,12 @@
-# MLLK_API
+# Machine Learning Learning App
 
 generated using Luminus version "2.9.12.20"
 
-
-
-## Prerequisites
-
-You will need [Leiningen][1] 2.0 or above installed.
-
-[1]: https://github.com/technomancy/leiningen
+In development
 
 ## Running
 
-To start a web server for the application, run:
-
-    lein run 
+It can not be executed because environment setting is complexity.
 
 ## License
 
